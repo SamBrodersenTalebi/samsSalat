@@ -28,16 +28,22 @@ class Home extends React.Component{
                     "brødtext2":"Mauris sollicitudin velit sit amet tellus posuere, non interdum felis tincidunt. Quisque non pharetra ipsum, id mollis quam. Nulla.",
                     "button": true
                 }
-            ]
-        }
+            ],
+            textSection:null
+        };
     }
 
+
   render(){
+    let i = 0;
+    let textSection = this.state.text.map((object)=>{
+        return(<TextSection overskrift = {this.state.text.overskrift} icon={this.state.text.icon} text1={this.state.text.brødtext1} text2= {this.state.text.brødtext2} button={this.state.text.button} key={i++}/>)
+    });
     return (
         <div id="home-page">
             <ImageCarousel/>
             <div id ="textSection">
-                <TextSection/>
+                {textSection}
             </div>
         </div>
       );
