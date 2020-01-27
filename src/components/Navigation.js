@@ -8,7 +8,11 @@ class Navigation extends React.Component{
             
             <nav className="navbar navbar-expand-md bg-dark navbar-dark">
               {/* Brand */}
-              <a className="navbar-brand" href="#"><img src={logo} alt="Sams Salat Logo"></img></a>
+              <a className="navbar-brand" href="#">
+                  <Link to="/">
+                    <img src={logo} alt="Sams Salat Logo"></img>
+                  </Link>
+              </a>
         
              {/* collapsing button */}
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -18,15 +22,21 @@ class Navigation extends React.Component{
              {/* Links */}
               <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <a className="nav-link">Forside</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link">Om Os</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link">Kontakt</a>
-                  </li>
+                  <Link to="/">
+                    <li className="nav-item">
+                        <a className="nav-link">Forside</a>
+                    </li>
+                  </Link>
+                  <Link to="/about">
+                    <li className="nav-item">
+                        <a className="nav-link">Om Os</a>
+                    </li>
+                  </Link>
+                  <Link to="/contact">
+                    <li className="nav-item">
+                        <a className="nav-link">Kontakt</a>
+                    </li>
+                  </Link>
                 </ul>
               </div>
             </nav>
