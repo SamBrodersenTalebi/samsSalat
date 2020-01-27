@@ -1,10 +1,12 @@
 import React from 'react';
+import ImageCarousel from './ImageCarousel';
+
 
 class Home extends React.Component{
   render(){
     return (
-        <div>
-            <h1>Home Page</h1>
+        <div id="home-page">
+            <ImageCarousel/>
         </div>
       );
   }
