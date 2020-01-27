@@ -8,26 +8,30 @@ Switch: as soon as one URL matches it stops searching through the routes
 */
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
-import Nav from './components/Nav';
-import About from './components/About';
+import Navigation from './components/Navigation';
+import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
+import Home from './components/Home';
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Nav />
-        <Switch>
-          {/* 
-          The exact attribute specifies that the URL
-          needs to be exactly like that for it to be rendered.
-          */}  
-          <Route path="/about" exact component={About}/>
-          <Route path="/contact" exact component={Contact}/>
-        </Switch>
-      </div>
-    </Router>
-  );
+class App extends React.Component{
+  render(){
+    return (
+      <Router>
+        <div className="App">
+          <Navigation />
+          <Switch>
+            {/* 
+            The exact attribute specifies that the URL
+            needs to be exactly like that for it to be rendered.
+            */}  
+            <Route path="/" exact component={Home}/>
+            <Route path="/about" exact component={AboutUs}/>
+            <Route path="/contact" exact component={Contact}/>
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
