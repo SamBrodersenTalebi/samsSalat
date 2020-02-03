@@ -16,11 +16,29 @@ class TextSection extends React.Component{
            icon = <MdRestaurantMenu/>;
       };
 
-    return (
-      
+    if(this.props.button){
+        return(
         <Container>
             <Row className="align-center box">
-                <Col>
+                <Col md={6} xs={12}>
+                    1 of 2
+                </Col>
+                <Col md={6} xs={12}>
+                <h3>{this.props.overskrift}</h3>
+                    <IconContext.Provider value={{ color: "green", size:"2em" }} >
+                        <p>{icon}</p>
+                    </IconContext.Provider>
+                    <p>{this.props.text1}</p>
+                    <p>{this.props.text2}</p>
+                </Col>
+            </Row>
+        </Container>
+        );
+    }else{
+        return(
+        <Container>
+            <Row className="align-center box">
+                <Col md={6} xs={12}>
                     <h3>{this.props.overskrift}</h3>
                     <IconContext.Provider value={{ color: "green", size:"2em" }} >
                         <p>{icon}</p>
@@ -28,10 +46,11 @@ class TextSection extends React.Component{
                     <p>{this.props.text1}</p>
                     <p>{this.props.text2}</p>
                 </Col>
-                <Col>2 of 2</Col>
+                <Col md={6} xs={12}>2 of 2</Col>
             </Row>
-        </Container>
-    );
+        </Container>    
+        );
+    }
   }
 }
 

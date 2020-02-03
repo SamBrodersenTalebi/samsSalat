@@ -16,19 +16,19 @@ class Home extends React.Component{
                    "image":""
                 },
                 {
-                    "overskrift":"Stor salatbar",
-                    "icon":"salad",
-                    "brødtext1": "Nullam auctor congue aliquet. In et blandit mauris. Interdum et malesuada fames ac ante ipsum.",
-                    "brødtext2":"Mauris sollicitudin velit sit amet tellus posuere, non interdum felis tincidunt. Quisque non pharetra ipsum, id mollis quam. Nulla.",
-                    "button": false,
-                    "image":""
-                },
-                {
                     "overskrift":"Udforsk vores menu",
                     "icon":"menu",
                     "brødtext1": "Nullam auctor congue aliquet. In et blandit mauris. Interdum et malesuada fames ac ante ipsum.",
                     "brødtext2":"Mauris sollicitudin velit sit amet tellus posuere, non interdum felis tincidunt. Quisque non pharetra ipsum, id mollis quam. Nulla.",
                     "button": true,
+                    "image":""
+                },
+                {
+                    "overskrift":"Stor salatbar",
+                    "icon":"salad",
+                    "brødtext1": "Nullam auctor congue aliquet. In et blandit mauris. Interdum et malesuada fames ac ante ipsum.",
+                    "brødtext2":"Mauris sollicitudin velit sit amet tellus posuere, non interdum felis tincidunt. Quisque non pharetra ipsum, id mollis quam. Nulla.",
+                    "button": false,
                     "image":""
                 }
             ]
