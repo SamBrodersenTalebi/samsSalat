@@ -32,9 +32,9 @@ class Navigation extends React.Component{
                         <a className="nav-link">Om Os</a>
                     </li>
                   </Link>
-                  <Link to="/contact">
+                  <Link to="/menu">
                     <li className="nav-item">
-                        <a className="nav-link">Kontakt</a>
+                        <a className="nav-link">Menu</a>
                     </li>
                   </Link>
                 </ul>

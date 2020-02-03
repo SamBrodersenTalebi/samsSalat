@@ -1,9 +1,10 @@
 import React from 'react';
-import {Col, Row, Container } from 'react-bootstrap';
+import {Col, Row, Container, Button } from 'react-bootstrap';
 import { MdRestaurantMenu } from "react-icons/md";
 import { GiTomato } from "react-icons/gi";
 import { GiSandwich } from "react-icons/gi";
 import { IconContext } from "react-icons";
+import {Link} from 'react-router-dom';
 
 class TextSection extends React.Component{
   render(){
@@ -23,13 +24,19 @@ class TextSection extends React.Component{
                 <Col md={6} xs={12}>
                     1 of 2
                 </Col>
-                <Col md={6} xs={12}>
+                <Col md={6} xs={12} className="border">
                 <h3>{this.props.overskrift}</h3>
                     <IconContext.Provider value={{ color: "green", size:"2em" }} >
                         <p>{icon}</p>
                     </IconContext.Provider>
                     <p>{this.props.text1}</p>
                     <p>{this.props.text2}</p>
+                    <Link to="/menu">
+                        <Button size="sm" variant="link">    
+                            Menu
+                        </Button>
+                    </Link>
+                    
                 </Col>
             </Row>
         </Container>
@@ -38,7 +45,7 @@ class TextSection extends React.Component{
         return(
         <Container>
             <Row className="align-center box">
-                <Col md={6} xs={12}>
+                <Col md={6} xs={12} className="border">
                     <h3>{this.props.overskrift}</h3>
                     <IconContext.Provider value={{ color: "green", size:"2em" }} >
                         <p>{icon}</p>

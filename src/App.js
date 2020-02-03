@@ -12,6 +12,7 @@ import Navigation from './components/Navigation';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import Home from './components/Home';
+import Footer from './components/Footer';
 
 class App extends React.Component{
   render(){
@@ -26,8 +27,9 @@ class App extends React.Component{
             */}  
             <Route path="/" exact component={Home}/>
             <Route path="/about" exact component={AboutUs}/>
-            <Route path="/contact" exact component={Contact}/>
+            <Route path="/menu" exact component={Contact}/>
           </Switch>
+          <Footer />
         </div>
       </Router>
     );
