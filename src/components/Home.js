@@ -12,24 +12,26 @@ class Home extends React.Component{
                    "icon":"sandwich",
                    "brødtext1": "Nullam auctor congue aliquet. In et blandit mauris. Interdum et malesuada fames ac ante ipsum.",
                    "brødtext2":"Mauris sollicitudin velit sit amet tellus posuere, non interdum felis tincidunt. Quisque non pharetra ipsum, id mollis quam. Nulla.",
-                   "button": false
+                   "button": false,
+                   "image":""
                 },
                 {
                     "overskrift":"Stor salatbar",
                     "icon":"salad",
                     "brødtext1": "Nullam auctor congue aliquet. In et blandit mauris. Interdum et malesuada fames ac ante ipsum.",
                     "brødtext2":"Mauris sollicitudin velit sit amet tellus posuere, non interdum felis tincidunt. Quisque non pharetra ipsum, id mollis quam. Nulla.",
-                    "button": false
+                    "button": false,
+                    "image":""
                 },
                 {
                     "overskrift":"Udforsk vores menu",
                     "icon":"menu",
                     "brødtext1": "Nullam auctor congue aliquet. In et blandit mauris. Interdum et malesuada fames ac ante ipsum.",
                     "brødtext2":"Mauris sollicitudin velit sit amet tellus posuere, non interdum felis tincidunt. Quisque non pharetra ipsum, id mollis quam. Nulla.",
-                    "button": true
+                    "button": true,
+                    "image":""
                 }
-            ],
-            textSection:null
+            ]
         };
     }
 
@@ -37,7 +39,7 @@ class Home extends React.Component{
   render(){
     let i = 0;
     let textSection = this.state.text.map((object)=>{
-        return(<TextSection overskrift = {this.state.text.overskrift} icon={this.state.text.icon} text1={this.state.text.brødtext1} text2= {this.state.text.brødtext2} button={this.state.text.button} key={i++}/>)
+        return(<TextSection overskrift = {object.overskrift} icon={object.icon} text1={object.brødtext1} text2= {object.brødtext2} button={object.button} key={i++}/>)
     });
     return (
         <div id="home-page">
