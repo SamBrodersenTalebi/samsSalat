@@ -10,7 +10,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
 import AboutUs from './components/AboutUs';
-import Contact from './components/Contact';
+import Menu from './components/Menu';
 import Home from './components/Home';
 import Footer from './components/Footer';
 
@@ -27,7 +27,7 @@ class App extends React.Component{
             */}  
             <Route path="/" exact component={Home}/>
             <Route path="/about" exact component={AboutUs}/>
-            <Route path="/menu" exact component={Contact}/>
+            <Route path="/menu" exact component={Menu}/>
           </Switch>
           <Footer />
         </div>

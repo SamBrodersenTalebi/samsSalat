@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Contact extends React.Component{
+class Menu extends React.Component{
   render(){
     return (
         <div>
@@ -11,4 +11,4 @@ class Contact extends React.Component{
   
 }
 
-export default Contact;
+export default Menu;
