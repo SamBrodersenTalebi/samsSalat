@@ -17,6 +17,7 @@ class AboutUs extends React.Component{
         {
           "overskrift":"Se kontrol rapport",
           "text1":"adsadsa a dsa dsad asd sa dsa a dsa",
+          "text2":"asda",
           "image":"",
           "icon":"FiSmile" 
         }
@@ -24,9 +25,19 @@ class AboutUs extends React.Component{
     }
   }
   render(){
+    let i = 0;
+    let text = this.state.text.map((object)=>{
+        return(<AboutText overskrift = {object.overskrift} icon={object.icon} text1={object.text1} text2= {object.text2} key={i++}/>)
+    });
+
     return (
         <div>
-            
+            <div className="about-text">
+                {text}
+            </div>
+            <div id="map">
+
+            </div>
         </div>
       );
   }
