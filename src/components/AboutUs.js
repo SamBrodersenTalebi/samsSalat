@@ -35,9 +35,7 @@ class AboutUs extends React.Component{
             <div className="about-text">
                 {text}
             </div>
-            <div id="map">
-              <MapComponent/>
-            </div>
+            <MapComponent/>
         </div>
       );
   }
