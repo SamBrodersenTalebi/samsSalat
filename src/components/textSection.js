@@ -26,7 +26,7 @@ class TextSection extends React.Component{
                 </Col>
                 <Col md={6} xs={12} className="border">
                 <h3>{this.props.overskrift}</h3>
-                    <IconContext.Provider value={{ color: "green", size:"2em" }} >
+                    <IconContext.Provider value={{ color: "#BAD127", size:"2em" }} >
                         <p>{icon}</p>
                     </IconContext.Provider>
                     <p>{this.props.text1}</p>
@@ -47,7 +47,7 @@ class TextSection extends React.Component{
             <Row className="align-center box">
                 <Col md={6} xs={12} className="border">
                     <h3>{this.props.overskrift}</h3>
-                    <IconContext.Provider value={{ color: "green", size:"2em" }} >
+                    <IconContext.Provider value={{ color: "#EDF4AE", size:"2em" }} >
                         <p>{icon}</p>
                     </IconContext.Provider>
                     <p>{this.props.text1}</p>

@@ -1,6 +1,10 @@
+/*Universal*/
+
 /*Navigation*/
 #nav-color{
   background-color: rgb(36,35,35) !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*textSection*/
@@ -41,5 +45,22 @@
 }
 
 .main-footer{
-  background-color: rgb(68,68,68);
+  background-color: rgb(68,68,68);;
+}
+
+.text-xs-center{
+  margin:0 !important;
+}
+
+.footer-header{
+  color: rgb(236,236,236);
+  padding-top:15px;
+}
+
+.list-unstyled li{
+  color:#BEBEBE;
+}
+
+.text-xs-center{
+  color: #BEBEBE;
 }
