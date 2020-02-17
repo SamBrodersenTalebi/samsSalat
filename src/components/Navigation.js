@@ -6,7 +6,7 @@ class Navigation extends React.Component{
     render(){
         return(
             
-            <nav className="navbar navbar-expand-md bg-dark navbar-dark">
+            <nav id = "nav-color" className="navbar navbar-expand-md bg-dark navbar-dark">
               {/* Brand */}
               <a className="navbar-brand" href="#">
                   <Link to="/">

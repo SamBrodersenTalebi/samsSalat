@@ -1,3 +1,7 @@
+/*Navigation*/
+#nav-color{
+  background-color: rgb(36,35,35) !important;
+}
 
 /*textSection*/
 #textSection{
@@ -23,8 +27,19 @@
 
 /*AboutText*/
 
+
+/*Menu*/
+
+#menu{
+  text-align: center !important;
+}
+
 /*Footer*/
 
 .center{
   text-align: center;
+}
+
+.main-footer{
+  background-color: rgb(68,68,68);
 }
