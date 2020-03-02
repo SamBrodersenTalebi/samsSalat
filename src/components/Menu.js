@@ -6,12 +6,16 @@ import {Col, Row, Container, Button } from 'react-bootstrap';
 class Menu extends React.Component{
 
   render(){
-    let sandwiches = ["Kylling/Bacon", "Kylling/Humus", "Falafel/Feta", "Laks med feta", "Æg og rejer", "Skinke med ost", "Hjemmelavet tunsalat", "Salami", "Spicy kylling", "Vegetar med humus"];
+    let sandwiches = ["Kylling/Bacon", "Spicy Kylling", "Kylling/Humus", "Laks med feta",  "Æg og rejer", "Frikadelle", "Skinke med ost", "Hjemmelavet tunsalat", "Salami","Falafel/Feta", "Hjemmelavet humus", "Mozzarella"];
     let liSandwich = sandwiches.map(item =>{
       return(<li key={item}><a>{item}</a></li>)
     })
     return (
-      <Container id="menu-container">
+      <div id="menu">
+        <div id="menu-background-image">
+
+        </div>
+        <Container id="menu-container">
         <Row>
           <Col md={12}>
             <ol class="rounded-list">
@@ -43,7 +47,9 @@ class Menu extends React.Component{
             </img>
           </Col>
         </Row>
-      </Container>
+        </Container>
+      </div>
+      
       );
   }
   

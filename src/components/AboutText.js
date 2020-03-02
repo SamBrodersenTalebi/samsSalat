@@ -3,7 +3,7 @@ import {Col, Row, Container} from 'react-bootstrap';
 import { FiSmile } from "react-icons/fi";
 import { IoMdRestaurant } from "react-icons/io";
 import { IconContext } from "react-icons";
-import aboutTextImg from './images/aboutText1.jpg';
+import hygiejne from './images/hygiejne.jpg';
 import smileyKontrol from './images/smiley_kontrol.gif';
 
 class AboutText extends React.Component{
@@ -45,7 +45,7 @@ class AboutText extends React.Component{
                       <p>{this.props.text1}</p>
                       <p>{this.props.text2}</p>
                   </Col>
-                  <Col md={6} sm={12}><img className="about-image" src={aboutTextImg}></img></Col>
+                  <Col md={6} sm={12}><img className="about-image" src={hygiejne}></img></Col>
               </Row>
           </Container>    
           );
