@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageCarousel from './ImageCarousel';
 import TextSection from './textSection';
+import {Container } from 'react-bootstrap';
 
 class Home extends React.Component{
     constructor(props){
@@ -45,7 +46,9 @@ class Home extends React.Component{
         <div id="home-page">
             <ImageCarousel/>
             <div id ="textSection">
-                {textSection}
+                <Container>
+                    {textSection}
+                </Container> 
             </div>
         </div>
       );

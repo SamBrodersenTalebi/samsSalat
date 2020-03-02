@@ -13,6 +13,11 @@
   width: 100%;
 }
 
+.home-image{
+  max-height: 250px;
+  max-width: 400px;
+}
+
 /*textSection*/
 #textSection{
   margin-top: 40px !important;
@@ -21,6 +26,11 @@
 .border{
   border: 1px solid black;
   padding: 10px 10px;
+  height: 270px;
+}
+
+.image-box{
+  height: 250px;
 }
 
 .align-center{
@@ -37,6 +47,10 @@
 
 /*AboutText*/
 
+.about-image{
+  max-height: 300px;
+  max-width: 450px;
+}
 
 /*Menu*/
 
