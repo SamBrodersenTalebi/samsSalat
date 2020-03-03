@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Row, Container} from 'react-bootstrap';
+import {Col, Row} from 'react-bootstrap';
 import { FiSmile } from "react-icons/fi";
 import { IoMdRestaurant } from "react-icons/io";
 import { IconContext } from "react-icons";
@@ -17,12 +17,12 @@ class AboutText extends React.Component{
   
       if(this.props.icon === "FiSmile"){
           return(
-          <Container>
-              <Row className="align-center align-items-center box">
-                  <Col md={6} sm={12}>
-                    <a href="https://www.findsmiley.dk/540007" target="_blank"><img className="about-image" src={smileyKontrol}></img></a>
+              <Row className="align-center align-items-center">
+                  <Col md={12}  lg={5}>
+                    <a href="https://www.findsmiley.dk/540007" target="_blank" className="anchor-smiley"><div className="about-image-smiley"></div></a>
                   </Col>
-                  <Col md={6} sm={12} className="border">
+
+                  <Col md={12} lg={{span:5, offset:2}} className="box">
                   <h3>{this.props.overskrift}</h3>
                       <IconContext.Provider value={{ color: "#BAD127", size:"2em" }} >
                           <p>{icon}</p>
@@ -30,14 +30,13 @@ class AboutText extends React.Component{
                       <p>{this.props.text1}</p>
                       <p>{this.props.text2}</p>
                   </Col>
+
               </Row>
-          </Container>
           );
       }else{
           return(
-          <Container>
-              <Row className="align-center align-items-center box">
-                  <Col md={6} sm={12} className="border">
+              <Row className="align-center align-items-center">
+                  <Col md={12} lg={5} className="box">
                       <h3>{this.props.overskrift}</h3>
                       <IconContext.Provider value={{ color: "#BAD127", size:"2em" }} >
                           <p>{icon}</p>
@@ -45,9 +44,8 @@ class AboutText extends React.Component{
                       <p>{this.props.text1}</p>
                       <p>{this.props.text2}</p>
                   </Col>
-                  <Col md={6} sm={12}><img className="about-image" src={hygiejne}></img></Col>
+                  <Col md={12} lg={{span:5, offset:2}}><div className="about-image-salad box-image"></div></Col>
               </Row>
-          </Container>    
           );
       }
     }

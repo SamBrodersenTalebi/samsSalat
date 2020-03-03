@@ -15,7 +15,7 @@ class ImageCarousel extends React.Component{
               alt="First slide"
             />
             <Carousel.Caption>
-                <h3>First slide label</h3>
+                <h3>Velkommen til Sams Salat</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
         </Carousel.Item>
@@ -27,7 +27,7 @@ class ImageCarousel extends React.Component{
               alt="Second slide"
             />
             <Carousel.Caption>
-                <h3>Second slide label</h3>
+                <h3 style={{color:"black"}}>Find os på Torvet</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
         </Carousel.Item>

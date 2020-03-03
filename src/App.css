@@ -1,4 +1,9 @@
 /*Universal*/
+.box{
+  border: 1px solid black;
+  height: 270px;
+  padding: 0 auto;
+}
 
 
 /*Navigation*/
@@ -47,10 +52,34 @@
 
 /*AboutText*/
 
+
+
 .about-image{
   max-height: 300px;
   max-width: 450px;
 }
+
+.about-image-smiley{
+  width: 432.5px;
+  height: 120px;
+  background-image: url("./components/images/smiley_kontrol.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin:auto;
+  padding: 0 0 !important;
+}
+
+.about-image-salad{
+  min-width:432.5px;
+  min-height: 270px;
+  background-image: url("./components/images/hygiejne.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin:auto;
+}
+
 
 /*Menu*/
 

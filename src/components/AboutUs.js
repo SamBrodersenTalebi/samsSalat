@@ -1,6 +1,7 @@
 import React from 'react';
 import MapComponent from './MapComponent.js';
 import AboutText from './AboutText.js';
+import {Container} from 'react-bootstrap';
 
 class AboutUs extends React.Component{
   constructor(props){
@@ -32,9 +33,9 @@ class AboutUs extends React.Component{
 
     return (
         <div>
-            <div className="about-text">
-                {text}
-            </div>
+            <Container>
+              {text}
+            </Container>
             <MapComponent/>
         </div>
       );
