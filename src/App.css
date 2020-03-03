@@ -239,6 +239,24 @@ ol{
   }
 }
 
+@media screen and (max-width: 768px){
+  .menu-image-col{
+    display: none;
+  }
+
+  .menu-mobile{
+    display: block !important;
+    height: 250px;
+    background-image: url("./components/images/salad.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15px !important;
+    width:100%;
+    margin-top:15px;
+  }
+}
+
 /*Footer*/
 
 .center{
