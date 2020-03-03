@@ -1,8 +1,8 @@
 /*Universal*/
-.box{
+.infoDiv{
   border: 1px solid black;
   height: 270px;
-  padding: 0 auto;
+  padding-top: 10px;
 }
 
 
@@ -28,11 +28,6 @@
   margin-top: 40px !important;
 }
 
-.border{
-  border: 1px solid black;
-  padding: 10px 10px;
-  height: 270px;
-}
 
 .image-box{
   height: 250px;
@@ -71,13 +66,38 @@
 }
 
 .about-image-salad{
-  min-width:432.5px;
-  min-height: 270px;
+  width:432.5px;
+  height: 270px;
   background-image: url("./components/images/hygiejne.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin:auto;
+}
+
+@media screen and (max-width:1200px){
+  .about-image-smiley, .about-image-salad{
+    width:357.5px;
+  }
+}
+
+@media screen and (max-width:992px){
+
+  .about-image-mobile{
+    display: block !important;
+    height: 150px;
+    background-image: url("./components/images/smiley_kontrol.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15px !important;
+    width:100%;
+    margin-top:15px;
+  }
+
+  .about-image-salad, .about-image-smiley{
+    display:none;
+  }
 }
 
 

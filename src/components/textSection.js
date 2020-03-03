@@ -30,7 +30,7 @@ class TextSection extends React.Component{
                 <Col md={6} xs={12} className="image-box">
                     <img className="home-image" src={image}></img>
                 </Col>
-                <Col md={6} xs={12} className="border">
+                <Col md={6} xs={12} className="infoDiv">
                 <h3>{this.props.overskrift}</h3>
                     <IconContext.Provider value={{ color: "#BAD127", size:"2em" }} >
                         <p>{icon}</p>
@@ -41,15 +41,14 @@ class TextSection extends React.Component{
                         <Button size="sm" variant="success">    
                             Menu
                         </Button>
-                    </Link>
-                    
+                    </Link>  
                 </Col>
             </Row>
         );
     }else{
         return(
             <Row className="align-center align-items-center box">
-                <Col md={6} xs={12} className="border">
+                <Col md={6} xs={12} className="infoDiv">
                     <h3>{this.props.overskrift}</h3>
                     <IconContext.Provider value={{ color: "#BAD127", size:"2em" }} >
                         <p>{icon}</p>
