@@ -28,6 +28,10 @@
   margin-top: 40px !important;
 }
 
+.textSection{
+  height: 270px !important;
+}
+
 
 .image-box{
   height: 250px;
@@ -42,6 +46,56 @@
   #textSection{
     max-width: 1425px;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .textSection{
+    height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .image-box{
+    display:none;
+  }
+
+  .textSection-image1{
+    display: block !important;
+    height: 350px;
+    background-image: url("./components/images/TjekMenu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    margin-bottom:20px;
+  }
+
+  .textSection-image2{
+    display: block !important;
+    height: 350px;
+    background-image: url("./components/images/ægOgRejer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    margin-top:20px;
+  }
+}
+
+@media only screen and (max-width: 436px){
+  .infoDiv h3{
+    font-size: 20px;
+  }
+
+  .infoDiv p{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 388px){
+  .button-box{
+    height: 350px !important;
   }
 }
 

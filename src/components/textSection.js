@@ -27,10 +27,15 @@ class TextSection extends React.Component{
     if(this.props.button){
         return(
             <Row className="align-center align-items-center box">
-                <Col md={6} xs={12} className="image-box">
+
+                <Col md={12} style={{display:"none"}} className="textSection-image1">
+                </Col>
+
+                <Col lg={6} md={12} className="image-box">
                     <img className="home-image" src={image}></img>
                 </Col>
-                <Col md={6} xs={12} className="infoDiv">
+
+                <Col lg={6} md={12} className="infoDiv textSection button-box">
                 <h3>{this.props.overskrift}</h3>
                     <IconContext.Provider value={{ color: "#BAD127", size:"2em" }} >
                         <p>{icon}</p>
@@ -43,12 +48,16 @@ class TextSection extends React.Component{
                         </Button>
                     </Link>  
                 </Col>
+
+                <Col md={12} style={{display:"none"}} className="textSection-image2">
+                </Col>
             </Row>
         );
     }else{
         return(
             <Row className="align-center align-items-center box">
-                <Col md={6} xs={12} className="infoDiv">
+
+                <Col lg={6} md={12} className="infoDiv textSection">
                     <h3>{this.props.overskrift}</h3>
                     <IconContext.Provider value={{ color: "#BAD127", size:"2em" }} >
                         <p>{icon}</p>
@@ -56,7 +65,10 @@ class TextSection extends React.Component{
                     <p>{this.props.text1}</p>
                     <p>{this.props.text2}</p>
                 </Col>
-                <Col md={6} xs={12} className="image-box"><img className="home-image" src={image}></img></Col>
+
+                <Col lg={6} md={12} className="image-box">
+                    <img className="home-image" src={image}></img>
+                </Col>
             </Row>
     
         );
