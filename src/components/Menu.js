@@ -49,8 +49,8 @@ class Menu extends React.Component{
           </Col>
         </Row>
 
-        <Row>
-          <Col md={12}>
+        <Row className="justify-content-md-center">
+          <Col md={{ span: 6, offset: 0 }}>
             <ol class="rounded-list">
               {liSandwich}
             </ol>

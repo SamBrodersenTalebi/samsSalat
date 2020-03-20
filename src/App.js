@@ -18,7 +18,7 @@ class App extends React.Component{
   render(){
     return (
       <Router>
-        <div className="App">
+        <div id="App">
           <Navigation />
           <Switch>
             {/* 
@@ -29,8 +29,8 @@ class App extends React.Component{
             <Route path="/about" exact component={AboutUs}/>
             <Route path="/menu" exact component={Menu}/>
           </Switch>
-          <Footer />
         </div>
+        <Footer />
       </Router>
     );
   }

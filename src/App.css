@@ -1,4 +1,8 @@
 /*Universal*/
+#App{
+  max-width:1170px;
+  margin: 0 auto;
+}
 .infoDiv{
   border: 1px solid black;
   height: 270px;
@@ -12,6 +16,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 
 /*HOME*/
 .carousel{

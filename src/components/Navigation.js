@@ -1,45 +1,27 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import logo from './images/logo.png'
+import {Navbar, Nav} from 'react-bootstrap';
+
 
 class Navigation extends React.Component{
     render(){
         return(
-            
-            <nav id = "nav-color" className="navbar navbar-expand-md bg-dark navbar-dark">
-              {/* Brand */}
-              <a className="navbar-brand" href="#">
-                  <Link to="/">
-                    <img src={logo} alt="Sams Salat Logo"></img>
-                  </Link>
-              </a>
-        
-             {/* collapsing button */}
-              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-        
-             {/* Links */}
-              <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul className="navbar-nav">
-                  <Link to="/">
-                    <li className="nav-item">
-                        <a className="nav-link">Forside</a>
-                    </li>
-                  </Link>
-                  <Link to="/about">
-                    <li className="nav-item">
-                        <a className="nav-link">Om Os</a>
-                    </li>
-                  </Link>
-                  <Link to="/menu">
-                    <li className="nav-item">
-                        <a className="nav-link">Menu</a>
-                    </li>
-                  </Link>
-                </ul>
-              </div>
-            </nav>
+          <Navbar id="nav-color" collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar.Brand>
+              <Link to="/" style={{paddingLeft:20}}>
+                <img src={logo} alt="Sams Salat Logo"></img>
+              </Link>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+            <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+              <Nav style={{paddingRight:20}}>
+                <Nav.Link ><Link to="/">Forside</Link></Nav.Link>
+                <Nav.Link><Link to="/about">Om Os</Link></Nav.Link>
+                <Nav.Link><Link to="/menu">Menu</Link></Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
         );
     }
 }

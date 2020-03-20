@@ -11,7 +11,7 @@ class AboutUs extends React.Component{
         {
           "overskrift": "Om Sams Salat",
           "text1":"Sams Salat er kvalitetsbevidst og vi holder hygiejnen høj.Derfor skal man også spritte sine hænder af før ta' selv.",
-          "text2": "Vi stræber efter kun at bruge de bedste råvarer. Har du forslag til hvordan vi kan forbedre os er du velkommen til at sende en mail.",
+          "text2": "Vi stræber efter kun at bruge de bedste råvarer. Har du forslag til hvordan vi kan forbedre os er du velkommen til at sende en mail. HUSK ARTIKEL OM SAMS SALAT!!!",
           "image":"",
           "icon":"IoMdRestaurant"
         },
