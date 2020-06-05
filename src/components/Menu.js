@@ -17,9 +17,9 @@ class Menu extends React.Component {
       'Salami',
       'Falafel/Feta',
       'Hjemmelavet humus',
-      'Mozzarella'
+      'Mozzarella',
     ];
-    let liSandwich = sandwiches.map(item => {
+    let liSandwich = sandwiches.map((item) => {
       return (
         <li key={item}>
           <a>{item}</a>
@@ -60,9 +60,9 @@ class Menu extends React.Component {
               <h3>Om vores sandwich</h3> <br />
               <p className='menu-text'>
                 <i>
-                  Alle vores sanwich indeholder salat, tomat, agurk, peberfrugt,
-                  rucola, krydderurter og rødløg. Det bruges altid friske
-                  råvarer.
+                  Alle vores sandwich indeholder salat, tomat, agurk,
+                  peberfrugt, rucola, krydderurter og rødløg. Det bruges altid
+                  friske råvarer.
                 </i>{' '}
                 <br /> <br />
                 Store bestillinger modtages gerne, hvis I mangler sandwich eller

@@ -11,7 +11,7 @@ class Footer extends React.Component {
               <h5 class='footer-header'>Kontakt</h5>
               <ul className='list-unstyled'>
                 <li>
-                  <span>Addresse:</span> Torvet 7, 8700 Horsens
+                  <span>Adresse:</span> Torvet 7, 8700 Horsens
                 </li>
                 <li>
                   <span>Tlf:</span> 75 61 04 04
@@ -27,13 +27,13 @@ class Footer extends React.Component {
               <h5 class='footer-header'>Åbningstider</h5>
               <ul className='list-unstyled'>
                 <li>
-                  <span>Mandag-Torsdag:</span> 10:30 - 17:00
+                  <span>Mandag-Fredag:</span> 10:30 - 18:00
                 </li>
                 <li>
-                  <span>Fredag:</span> 10:30 - 17:00
+                  <span>Lørdag:</span> 11:00 - 14:00
                 </li>
                 <li>
-                  <span>Lørdag og Søndag:</span> Lukket
+                  <span>Søndag:</span> Lukket
                 </li>
               </ul>
             </div>

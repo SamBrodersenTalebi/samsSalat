@@ -25,13 +25,19 @@ class Navigation extends React.Component {
         >
           <Nav style={{ paddingRight: 20 }}>
             <Nav.Link>
-              <Link to='/'>Forside</Link>
+              <Link to='/' className='nav-link'>
+                Forside
+              </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to='/about'>Om Os</Link>
+              <Link to='/about' className='nav-link'>
+                Om Os
+              </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to='/menu'>Menu</Link>
+              <Link to='/menu' className='nav-link'>
+                Menu
+              </Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

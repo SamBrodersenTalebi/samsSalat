@@ -3,8 +3,6 @@ import { Col, Row } from 'react-bootstrap';
 import { FiSmile } from 'react-icons/fi';
 import { IoMdRestaurant } from 'react-icons/io';
 import { IconContext } from 'react-icons';
-import hygiejne from './images/hygiejne.jpg';
-import smileyKontrol from './images/smiley_kontrol.gif';
 
 class AboutText extends React.Component {
   render() {
@@ -21,7 +19,6 @@ class AboutText extends React.Component {
           <Col md={12} lg={5}>
             <a
               href='https://www.findsmiley.dk/540007'
-              target='_blank'
               className='anchor-smiley'
             >
               <div className='about-image-smiley'></div>
@@ -44,7 +41,6 @@ class AboutText extends React.Component {
           >
             <a
               href='https://www.findsmiley.dk/540007'
-              target='_blank'
               className='anchor-smiley'
             >
               <div className='about-image-smiley-mobile'></div>
@@ -61,7 +57,16 @@ class AboutText extends React.Component {
               <p>{icon}</p>
             </IconContext.Provider>
             <p>{this.props.text1}</p>
-            <p>{this.props.text2}</p>
+            <p>
+              {this.props.text2}:
+              <a
+                href='https://hsfo.dk/artikel/birgit-var-med-til-at-bygge-storeb%C3%A6ltsbroen-nu-hitter-hun-med-bland-selv-salat-i-horsens'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Læs
+              </a>
+            </p>
           </Col>
           <Col md={12} lg={{ span: 5, offset: 2 }}>
             <div className='about-image-salad box-image'></div>

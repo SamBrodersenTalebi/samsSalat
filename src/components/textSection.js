@@ -34,7 +34,7 @@ class TextSection extends React.Component {
           ></Col>
 
           <Col lg={6} md={12} className='image-box'>
-            <img className='home-image' src={image}></img>
+            <img className='home-image' src={image} alt='home'></img>
           </Col>
 
           <Col lg={6} md={12} className='infoDiv textSection button-box'>
@@ -45,7 +45,11 @@ class TextSection extends React.Component {
             <p>{this.props.text1}</p>
             <p>{this.props.text2}</p>
             <Link to='/menu'>
-              <Button size='sm' variant='success'>
+              <Button
+                size='sm'
+                variant='success'
+                style={{ backgroundColor: '#BAD127', border: 0 }}
+              >
                 Menu
               </Button>
             </Link>
@@ -71,7 +75,7 @@ class TextSection extends React.Component {
           </Col>
 
           <Col lg={6} md={12} className='image-box'>
-            <img className='home-image' src={image}></img>
+            <img className='home-image' src={image} alt='home'></img>
           </Col>
         </Row>
       );

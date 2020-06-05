@@ -9,17 +9,16 @@ class ImageCarousel extends React.Component {
       <Carousel>
         <Carousel.Item>
           <img className='carousel' src={forside1} alt='First slide' />
-          <Carousel.Caption>
-            <h3>Velkommen til Sams Salat</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <Carousel.Caption className='carouselbox'>
+            <h3 className='carousel-header'>Velkommen til Sams Salat</h3>
           </Carousel.Caption>
         </Carousel.Item>
 
         <Carousel.Item>
           <img className='carousel' src={forside2} alt='Second slide' />
-          <Carousel.Caption>
-            <h3 style={{ color: 'black' }}>Find os på Torvet</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <Carousel.Caption className='carouselbox'>
+            <h3 className='carousel-header'>Find os på Torvet</h3>
+            <p className='carousel-text'>Lækkerier i hverdagen.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

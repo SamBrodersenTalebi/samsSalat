@@ -16,35 +16,35 @@ class Home extends React.Component {
           brødtext2:
             'Vi bruger altid friske råvarer bl.a. hjemmelavet dressing og pesto',
           button: false,
-          image: ''
+          image: '',
         },
         {
           overskrift: 'Udforsk vores menu',
           icon: 'menu',
           brødtext1:
-            'Nullam auctor congue aliquet. In et blandit mauris. Interdum et malesuada fames ac ante ipsum.',
+            'Om du vælger salat eller sandwich, så bestemmer du selv hvilke ingredienser du vil have i. Vi bruger altid friske råvarer.',
           brødtext2:
-            'Mauris sollicitudin velit sit amet tellus posuere, non interdum felis tincidunt. Quisque non pharetra ipsum, id mollis quam. Nulla.',
+            'Udbuddet er varierende i salatbaren, om det er sommer, efterår, vinter eller forår, så bruger vi altid årtidens friskeste grøntsager.',
           button: true,
-          image: ''
+          image: '',
         },
         {
           overskrift: 'Stor salatbar',
           icon: 'salad',
           brødtext1:
-            'Sams salat laver lækker og sund mad. Salatbuffen er nemt, sundt og hurtigt man blander sin favorit salat.',
+            'Sams Salat laver lækker og sund mad. Salatbuffen er nemt, sundt og hurtigt man blander sin favorit salat.',
           brødtext2:
             'Når den er færdig bliver den vejet og man betaler efter vægt.',
           button: false,
-          image: ''
-        }
-      ]
+          image: '',
+        },
+      ],
     };
   }
 
   render() {
     let i = 0;
-    let textSection = this.state.text.map(object => {
+    let textSection = this.state.text.map((object) => {
       return (
         <TextSection
           overskrift={object.overskrift}
