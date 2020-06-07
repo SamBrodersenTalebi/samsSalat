@@ -24,6 +24,16 @@
   color: #edf4ae !important;
 }
 
+.logo-image {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-image {
+    width: 230px;
+  }
+}
+
 /*HOME*/
 .carousel {
   width: 100%;
@@ -222,6 +232,10 @@
   background-position: center;
 }
 
+.menu-img-mobile {
+  display: none;
+}
+
 #menu-container {
   margin-top: 50px;
 }
@@ -293,23 +307,23 @@ ol {
   .menu-image {
     height: 250px;
   }
-}
 
-@media screen and (max-width: 768px) {
   .menu-image-col {
     display: none;
   }
 
-  .menu-mobile {
-    display: block !important;
-    height: 250px;
-    background-image: url('./components/images/salad.JPG');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 15px !important;
+  .menu-img-mobile {
+    display: block;
     width: 100%;
-    margin-top: 15px;
+  }
+  .gulerødsalat {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .background-menu {
+    display: none;
   }
 }
 

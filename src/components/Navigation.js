@@ -15,7 +15,7 @@ class Navigation extends React.Component {
       >
         <Navbar.Brand>
           <Link to='/' style={{ paddingLeft: 20 }}>
-            <img src={logo} alt='Sams Salat Logo'></img>
+            <img className='logo-image' src={logo} alt='Sams Salat Logo'></img>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />

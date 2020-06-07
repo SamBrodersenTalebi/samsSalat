@@ -28,15 +28,14 @@ class Menu extends React.Component {
     });
     return (
       <div id='menu'>
-        <div id='menu-background-image'></div>
+        <div className='background-menu' id='menu-background-image'></div>
         <Container id='menu-container'>
           <Row className='align-items-center text-center menu-row'>
             <Col md={6} sm={12} className='menu-image-col'>
               <img className='menu-image' alt='salad' src={salad}></img>
             </Col>
-
             <Col md={6} sm={12}>
-              <h3>Salatbaren</h3> <br />
+              <h3>Salatbaren</h3>
               <p className='menu-text'>
                 Det er nemt, sundt og hurtigt at blande sin egen salat. Det er
                 op til dig selv at sammensætte din helt egen lækre salat. <br />{' '}
@@ -47,17 +46,14 @@ class Menu extends React.Component {
                 tzatziki, oliven, fetadip mm.
               </p>
             </Col>
-
-            <Col
-              sm={12}
-              style={{ display: 'none' }}
-              className='menu-mobile'
-            ></Col>
+            <Col md={6} sm={12} className='menu-img-mobile'>
+              <img className='gulerødsalat' alt='salad' src={salad}></img>
+            </Col>
           </Row>
 
           <Row className='align-items-center text-center menu-row'>
             <Col md={6} sm={12}>
-              <h3>Om vores sandwich</h3> <br />
+              <h3>Om vores sandwich</h3>
               <p className='menu-text'>
                 <i>
                   Alle vores sandwich indeholder salat, tomat, agurk,
@@ -72,7 +68,7 @@ class Menu extends React.Component {
               </p>
             </Col>
 
-            <Col md={6} sm={12} className='menu-image-col'>
+            <Col md={6} sm={12} className='sandwiches'>
               <ol class='rounded-list'>{liSandwich}</ol>
             </Col>
           </Row>

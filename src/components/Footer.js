@@ -30,7 +30,7 @@ class Footer extends React.Component {
                   <span>Mandag-Fredag:</span> 10:30 - 18:00
                 </li>
                 <li>
-                  <span>Lørdag:</span> 11:00 - 14:00
+                  <span>Lørdag:</span> 11:00 - 14:30
                 </li>
                 <li>
                   <span>Søndag:</span> Lukket
