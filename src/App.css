@@ -147,6 +147,15 @@
   margin: auto;
 }
 
+.samsArtikel {
+  color: #bad127;
+  font-weight: bold;
+}
+
+.samsArtikel:hover {
+  color: #3f6e66;
+}
+
 @media screen and (max-width: 1200px) {
   .about-image-smiley,
   .about-image-salad {

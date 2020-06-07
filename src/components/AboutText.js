@@ -60,6 +60,7 @@ class AboutText extends React.Component {
             <p>
               {this.props.text2}:
               <a
+                className='samsArtikel'
                 href='https://hsfo.dk/artikel/birgit-var-med-til-at-bygge-storeb%C3%A6ltsbroen-nu-hitter-hun-med-bland-selv-salat-i-horsens'
                 target='_blank'
                 rel='noopener noreferrer'
