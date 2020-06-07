@@ -15,7 +15,7 @@ class AboutUs extends React.Component {
           text2:
             'Find mere information om Sams Salat ved at læse denne artikel',
           image: '',
-          icon: 'IoMdRestaurant'
+          icon: 'IoMdRestaurant',
         },
         {
           overskrift: 'Se kontrol rapport',
@@ -24,14 +24,14 @@ class AboutUs extends React.Component {
           text2:
             'For mere information kan du tjekke vores fødevarekontrol rapport',
           image: '',
-          icon: 'FiSmile'
-        }
-      ]
+          icon: 'FiSmile',
+        },
+      ],
     };
   }
   render() {
     let i = 0;
-    let text = this.state.text.map(object => {
+    let text = this.state.text.map((object) => {
       return (
         <AboutText
           overskrift={object.overskrift}
@@ -45,8 +45,10 @@ class AboutUs extends React.Component {
 
     return (
       <div>
-        <Container>{text}</Container>
-        <MapComponent />
+        <Container>
+          {text}
+          <MapComponent style={{ width: '100vw' }} />
+        </Container>
       </div>
     );
   }
