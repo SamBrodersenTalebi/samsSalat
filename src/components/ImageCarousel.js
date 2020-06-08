@@ -11,6 +11,7 @@ class ImageCarousel extends React.Component {
           <img className='carousel' src={forside1} alt='First slide' />
           <Carousel.Caption className='carouselbox'>
             <h3 className='carousel-header'>Velkommen til Sams Salat</h3>
+            <p className='carousel-text'>Sund - Frisk - Lækker - Nem</p>
           </Carousel.Caption>
         </Carousel.Item>
 

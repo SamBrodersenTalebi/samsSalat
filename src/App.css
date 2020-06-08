@@ -28,6 +28,12 @@
   margin: 0;
 }
 
+@media screen and (max-width: 414px) {
+  .nav-link {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .logo-image {
     width: 230px;
@@ -103,13 +109,17 @@
   }
 }
 
-@media only screen and (max-width: 436px) {
+@media only screen and (max-width: 414px) {
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
   .infoDiv h3 {
     font-size: 20px;
   }
 
   .infoDiv p {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 
@@ -334,6 +344,11 @@ ol {
 @media screen and (max-width: 414px) {
   .background-menu {
     display: none;
+  }
+
+  .rounded-list {
+    width: 90%;
+    margin: auto;
   }
 }
 

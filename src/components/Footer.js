@@ -10,9 +10,7 @@ class Footer extends React.Component {
             <div className='col-md-6 col-xs-12 center'>
               <h5 class='footer-header'>Kontakt</h5>
               <ul className='list-unstyled'>
-                <li>
-                  <span>Adresse:</span> Torvet 7, 8700 Horsens
-                </li>
+                <li>Torvet 7, 8700 Horsens</li>
                 <li>
                   <span>Tlf:</span> 75 61 04 04
                 </li>
