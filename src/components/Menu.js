@@ -57,8 +57,8 @@ class Menu extends React.Component {
               <p className='menu-text'>
                 <i>
                   Alle vores sandwich indeholder salat, tomat, agurk,
-                  peberfrugt, rucola, krydderurter og rødløg. Det bruges altid
-                  friske råvarer.
+                  peberfrugt, rucola, krydderurter og rødløg. Men du kan
+                  naturligvis fravælge ingredienser.
                 </i>{' '}
                 <br /> <br />
                 Store bestillinger modtages gerne, hvis I mangler sandwich eller
