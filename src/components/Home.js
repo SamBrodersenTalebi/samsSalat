@@ -22,7 +22,7 @@ class Home extends React.Component {
           overskrift: 'Udforsk vores menu',
           icon: 'menu',
           brødtext1:
-            'Om du vælger salat eller sandwich, så bestemmer du selv hvilke ingredienser du vil have i. Vi bruger altid friske råvarer.',
+            'Om du vælger salat eller sandwich, så bestemmer du selv hvilke ingredienser du vil have i.',
           brødtext2:
             'Udbuddet er varierende i salatbaren, om det er sommer, efterår, vinter eller forår, så bruger vi altid årtidens friskeste grøntsager.',
           button: true,
