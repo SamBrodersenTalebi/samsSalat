@@ -11,7 +11,7 @@ class AboutUs extends React.Component {
         {
           overskrift: 'Om Sams Salat',
           text1:
-            'Vi stræber efter kun at bruge de bedste råvarer. Har du forslag til hvordan vi kan forbedre os er du velkommen til at sende en mail.',
+            'Vi stræber efter kun at bruge de bedste råvarer. Har du forslag til, hvordan vi kan forbedre os, er du velkommen til at sende en mail.',
           text2:
             'Find mere information om Sams Salat ved at læse denne artikel',
           image: '',

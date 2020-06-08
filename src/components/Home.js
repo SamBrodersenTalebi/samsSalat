@@ -12,7 +12,7 @@ class Home extends React.Component {
           overskrift: 'Lækre hjemmelavede sandwich',
           icon: 'sandwich',
           brødtext1:
-            'Sams salat har 12 forskellige sandwich lige fra laks til frikadelle eller vegetariske sandwich.',
+            'Sams Salat har 12 forskellige sandwich lige fra laks til frikadelle eller vegetariske sandwich. Du bestemmer selv, hvilket brød, som du ønsker til din sandwich.',
           brødtext2:
             'Vi bruger altid friske råvarer bl.a. hjemmelavet dressing og pesto',
           button: false,
@@ -22,7 +22,7 @@ class Home extends React.Component {
           overskrift: 'Udforsk vores menu',
           icon: 'menu',
           brødtext1:
-            'Om du vælger salat eller sandwich, så bestemmer du selv hvilke ingredienser du vil have i.',
+            'Om du vælger salat eller sandwich, så bestemmer du selv, hvilke ingredienser, du vil have i.',
           brødtext2:
             'Udbuddet er varierende i salatbaren, om det er sommer, efterår, vinter eller forår, så bruger vi altid årtidens grøntsager.',
           button: true,
@@ -32,7 +32,7 @@ class Home extends React.Component {
           overskrift: 'Stor salatbar',
           icon: 'salad',
           brødtext1:
-            'Sams Salat laver lækker og sund mad. Salatbuffen er nemt, sundt og hurtigt man blander sin favorit salat.',
+            'Sams Salat laver lækker og sund mad. Salatbuffeten er nemt, sundt og hurtigt, man blander selv sin favorit salat.',
           brødtext2:
             'Når den er færdig bliver den vejet og man betaler efter vægt.',
           button: false,

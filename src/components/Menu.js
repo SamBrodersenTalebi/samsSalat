@@ -66,9 +66,9 @@ class Menu extends React.Component {
                   rødløg. Men du kan naturligvis fravælge ingredienser.
                 </i>{' '}
                 <br /> <br />
-                Store bestillinger modtages gerne, hvis I mangler sandwich eller
-                salatbuffet til et stort arrangement står vi gerne til rådighed.{' '}
-                <br /> <br />
+                Store bestillinger modtages gerne. Hvis I mangler sandwich eller
+                salatbuffet til et stort arrangement, står vi gerne til
+                rådighed. <br /> <br />
                 <strong>Ring og bestil på tlf 75 61 04 04.</strong>
               </p>
             </Col>
