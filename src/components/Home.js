@@ -9,10 +9,10 @@ class Home extends React.Component {
     this.state = {
       text: [
         {
-          overskrift: 'Lækre sandwich til enhver',
+          overskrift: 'Lækre hjemmelavede sandwich',
           icon: 'sandwich',
           brødtext1:
-            'Sams salat har 12 forskellige sandwich lige fra laks til frikadelle eller vegetariske.',
+            'Sams salat har 12 forskellige sandwich lige fra laks til frikadelle eller vegetariske sandwich.',
           brødtext2:
             'Vi bruger altid friske råvarer bl.a. hjemmelavet dressing og pesto',
           button: false,
