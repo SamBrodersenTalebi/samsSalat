@@ -30,7 +30,7 @@ export default function MapComponent() {
     <div>
       <ReactMapGL
         {...viewport}
-        mapboxApiAccessToken={`${process.env.MAPBOX_TOKEN}`}
+        mapboxApiAccessToken={`pk.eyJ1Ijoic2FtYnJvZGVyc2VudGFsZWJpIiwiYSI6ImNrNjdxZXhqbDA1MWYzam91b2c1Z2ZxbTkifQ.nLQyaJAeq-HXWqWUPYljhQ`}
         mapStyle='mapbox://styles/sambrodersentalebi/ck6gejpiy21zb1ik7bqie80y0'
         //onViewStateChange gives the new viewport which can be used to update view of map
         onViewportChange={(viewport) => {
