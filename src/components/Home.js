@@ -24,7 +24,7 @@ class Home extends React.Component {
           brødtext1:
             'Om du vælger salat eller sandwich, så bestemmer du selv hvilke ingredienser du vil have i.',
           brødtext2:
-            'Udbuddet er varierende i salatbaren, om det er sommer, efterår, vinter eller forår, så bruger vi altid årtidens friskeste grøntsager.',
+            'Udbuddet er varierende i salatbaren, om det er sommer, efterår, vinter eller forår, så bruger vi altid årtidens grøntsager.',
           button: true,
           image: '',
         },
