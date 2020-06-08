@@ -37,6 +37,8 @@ class Menu extends React.Component {
             <Col md={6} sm={12}>
               <h3>Salatbaren</h3>
               <p className='menu-text'>
+                Prisen for en salat er <strong>10.95 kr per 100 gram </strong>{' '}
+                <br />
                 Det er nemt, sundt og hurtigt at blande sin egen salat. Det er
                 op til dig selv at sammensætte din helt egen lækre salat. <br />{' '}
                 <br />
@@ -55,10 +57,13 @@ class Menu extends React.Component {
             <Col md={6} sm={12}>
               <h3>Om vores sandwich</h3>
               <p className='menu-text'>
+                Prisen for en sandwich er <strong>48 kr</strong> og ekstra fyld
+                koster 8 kr per fyld.
+                <br />
+                Alle vores sandwich indeholder:{' '}
                 <i>
-                  Alle vores sandwich indeholder salat, tomat, agurk,
-                  peberfrugt, rucola, krydderurter og rødløg. Men du kan
-                  naturligvis fravælge ingredienser.
+                  salat, tomat, agurk, peberfrugt, rucola, krydderurter og
+                  rødløg. Men du kan naturligvis fravælge ingredienser.
                 </i>{' '}
                 <br /> <br />
                 Store bestillinger modtages gerne, hvis I mangler sandwich eller
