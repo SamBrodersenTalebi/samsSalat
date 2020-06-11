@@ -1,0 +1,379 @@
+.infoDiv {
+  border: 1px solid black;
+  height: 270px;
+  padding-top: 10px;
+}
+
+/*Navigation*/
+#nav-color {
+  background-color: rgb(36, 35, 35) !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-link {
+  color: #bad127 !important;
+}
+
+.nav-link:hover {
+  color: #edf4ae !important;
+}
+
+.logo-image {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-image {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .logo-image {
+    width: 170px;
+  }
+}
+
+/*HOME*/
+.carousel {
+  width: 100%;
+}
+
+.home-image {
+  max-height: 250px;
+  max-width: 400px;
+}
+
+/*textSection*/
+#textSection {
+  margin-top: 40px !important;
+}
+
+.textSection {
+  height: 270px !important;
+}
+
+.image-box {
+  height: 250px;
+}
+
+.align-center {
+  text-align: center;
+  margin: 25px 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  #textSection {
+    max-width: 1425px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .textSection {
+    height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .image-box {
+    display: none;
+  }
+
+  .textSection-image1 {
+    display: block !important;
+    height: 350px;
+    background-image: url('./images/TjekMenu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .textSection-image2 {
+    display: block !important;
+    height: 350px;
+    background-image: url('./images/ægOgRejer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .infoDiv h3 {
+    font-size: 20px;
+  }
+
+  .infoDiv p {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 388px) {
+  .button-box {
+    height: 350px !important;
+  }
+}
+
+/*AboutText*/
+
+.about-image {
+  max-height: 300px;
+  max-width: 450px;
+}
+
+.about-image-smiley {
+  width: 432.5px;
+  height: 120px;
+  background-image: url('./images/smiley_kontrol.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  padding: 0 0 !important;
+}
+
+.about-image-salad {
+  width: 432.5px;
+  height: 270px;
+  background-image: url('./images/hygiejne.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.samsArtikel {
+  color: #bad127;
+  font-weight: bold;
+}
+
+.samsArtikel:hover {
+  color: #3f6e66;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-image-smiley,
+  .about-image-salad {
+    width: 357.5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-image-mobile {
+    display: block !important;
+    height: 150px;
+    background-image: url('./images/smiley_kontrol.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15px !important;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .about-image-salad,
+  .about-image-smiley {
+    display: none;
+  }
+}
+
+/*Image carousel*/
+.carouselbox {
+  margin: auto;
+  background-color: #edf4ae;
+  width: 400px;
+  height: 100px;
+  color: #444444;
+  font-style: italic;
+}
+.carousel-indicators li {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-header {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  .carouselbox {
+    margin-bottom: -16px;
+    width: 300px;
+    height: 70px;
+    padding-top: 10px;
+  }
+
+  .carousel-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .carousel-header {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .carouselbox {
+    margin-bottom: -16px;
+    width: 185px;
+    height: 50px;
+    padding-top: 10px;
+  }
+
+  .carousel-text {
+    font-size: 12px;
+  }
+}
+
+/*Menu*/
+
+#menu-background-image {
+  height: 500px;
+  width: 100%;
+  background-image: url('./images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-img-mobile {
+  display: none;
+}
+
+#menu-container {
+  margin-top: 50px;
+}
+
+.menu-text {
+  padding: 0 30px;
+}
+
+.menu-image {
+  border-radius: 30px;
+  height: 300px;
+  width: auto;
+}
+
+.menu-row {
+  margin-bottom: 40px;
+}
+
+ol {
+  counter-reset: li; /* Initiate a counter */
+  list-style: none; /* Remove default numbering */
+  *list-style: decimal; /* Keep using default numbering for IE6/7 */
+  font: 15px 'trebuchet MS', 'lucida sans';
+  padding: 0;
+  margin-bottom: 4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.rounded-list a {
+  position: relative;
+  display: block;
+  padding: 0.4em 0.4em 0.4em 2em;
+  *padding: 0.4em;
+  margin: 0.5em 0;
+  background: #ddd;
+  color: #444;
+  text-decoration: none;
+  border-radius: 0.3em;
+  transition: all 0.3s ease-out;
+}
+
+.rounded-list a:hover {
+  background: #eee;
+}
+
+.rounded-list a:hover:before {
+  transform: rotate(360deg);
+}
+
+.rounded-list a:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #bad127;
+  height: 2.5em;
+  width: 2.5em;
+  line-height: 2em;
+  border: 0.3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all 0.3s ease-out;
+}
+
+@media screen and (max-width: 992px) {
+  .menu-image {
+    height: 250px;
+  }
+
+  .menu-image-col {
+    display: none;
+  }
+
+  .menu-img-mobile {
+    display: block;
+    width: 100%;
+  }
+  .gulerødsalat {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .background-menu {
+    display: none;
+  }
+
+  .rounded-list {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/*Footer*/
+
+.center {
+  text-align: center;
+}
+
+.main-footer {
+  background-color: rgb(68, 68, 68);
+}
+
+.text-xs-center {
+  margin: 0 !important;
+}
+
+.footer-header {
+  color: rgb(236, 236, 236);
+  padding-top: 15px;
+}
+
+.list-unstyled li {
+  color: #bebebe;
+}
+
+.text-xs-center {
+  color: #bebebe;
+}
