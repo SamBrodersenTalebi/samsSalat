@@ -31,7 +31,15 @@ class AboutText extends React.Component {
               <p>{icon}</p>
             </IconContext.Provider>
             <p>{this.props.text1}</p>
-            <p>{this.props.text2}</p>
+            <p>
+              {this.props.text2}{' '}
+              <a
+                className='samsArtikel'
+                href='https://www.findsmiley.dk/540007'
+              >
+                her
+              </a>
+            </p>
           </Col>
 
           <Col
@@ -58,7 +66,7 @@ class AboutText extends React.Component {
             </IconContext.Provider>
             <p>{this.props.text1}</p>
             <p>
-              {this.props.text2}:
+              {this.props.text2}:{' '}
               <a
                 className='samsArtikel'
                 href='https://hsfo.dk/artikel/birgit-var-med-til-at-bygge-storeb%C3%A6ltsbroen-nu-hitter-hun-med-bland-selv-salat-i-horsens'
