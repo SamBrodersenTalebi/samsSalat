@@ -1,6 +1,6 @@
 import React from 'react';
 //import sandwich from './images/sandwich.jpg';
-import salad from './images/salad.JPG';
+import salatBillede from './images/salad.JPG';
 import { Col, Row, Container } from 'react-bootstrap';
 
 class Menu extends React.Component {
@@ -32,7 +32,11 @@ class Menu extends React.Component {
         <Container id='menu-container'>
           <Row className='align-items-center text-center menu-row'>
             <Col md={6} sm={12} className='menu-image-col'>
-              <img className='menu-image' alt='salad' src={salad}></img>
+              <img
+                className='menu-image'
+                alt='billede af salat'
+                src={salatBillede}
+              ></img>
             </Col>
             <Col md={6} sm={12}>
               <h3>Salatbaren</h3>
@@ -49,7 +53,11 @@ class Menu extends React.Component {
               </p>
             </Col>
             <Col md={6} sm={12} className='menu-img-mobile'>
-              <img className='gulerødsalat' alt='salad' src={salad}></img>
+              <img
+                className='gulerødsalat'
+                alt='billede af salat'
+                src={salatBillede}
+              ></img>
             </Col>
           </Row>
 
