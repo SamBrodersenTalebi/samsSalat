@@ -1,6 +1,6 @@
 import React from 'react';
-//import sandwich from './images/sandwich.jpg';
-import salatBillede from './images/salad.JPG';
+import sandwich from './images/sandwich.jpg';
+
 import { Col, Row, Container } from 'react-bootstrap';
 
 class Menu extends React.Component {
@@ -35,7 +35,7 @@ class Menu extends React.Component {
               <img
                 className='menu-image'
                 alt='billede af salat'
-                src={salatBillede}
+                src={sandwich}
               ></img>
             </Col>
             <Col md={6} sm={12}>
@@ -56,7 +56,7 @@ class Menu extends React.Component {
               <img
                 className='gulerødsalat'
                 alt='billede af salat'
-                src={salatBillede}
+                src={sandwich}
               ></img>
             </Col>
           </Row>
