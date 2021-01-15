@@ -1,29 +1,68 @@
 import React from 'react';
 import sandwich from './images/sandwich.jpg';
 
-import { Col, Row, Container } from 'react-bootstrap';
+import { Col, Row, Container, Table } from 'react-bootstrap';
 
 class Menu extends React.Component {
   render() {
     let sandwiches = [
-      'Kylling/Bacon',
-      'Spicy Kylling',
-      'Kylling/Humus',
-      'Laks med feta',
-      'Æg og rejer',
-      'Frikadelle',
-      'Skinke med ost',
-      'Hjemmelavet tunsalat',
-      'Salami',
-      'Falafel/Feta',
-      'Hjemmelavet humus',
-      'Mozzarella',
+      {
+        navn: 'Kylling Bacon',
+        indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
+      },
+      {
+        navn: 'Spicy Kylling',
+        indhold:
+          'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt, hjemmelavet chilisovs og jalepenos',
+      },
+      {
+        navn: 'Kylling Haydari',
+        indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
+      },
+      {
+        navn: 'Laks Feta',
+        indhold:
+          'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt og hjemmelavet pesto',
+      },
+      {
+        navn: 'Æg rejer',
+        indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
+      },
+      {
+        navn: 'Tunsalat',
+        indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
+      },
+      {
+        navn: 'Skinke Ost',
+        indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
+      },
+      {
+        navn: 'Frikadelle',
+        indhold:
+          'Salat, tomat, løg, rucola, krydderurter, syltede agurker og rødkål',
+      },
+      {
+        navn: 'Salami',
+        indhold:
+          'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt og hjemmelavet pesto',
+      },
+      {
+        navn: 'Falafel Haydari',
+        indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
+      },
+      {
+        navn: 'Humus',
+        indhold:
+          'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt, revet gulerod, feta og hjemmelavet pesto',
+      },
     ];
-    let liSandwich = sandwiches.map((item) => {
+    let liSandwich = sandwiches.map((item, index) => {
       return (
-        <li key={item}>
-          <a>{item}</a>
-        </li>
+        <tr key={index}>
+          <td>{item.navn}</td>
+          <td>{item.indhold}</td>
+          <td>50 kr.</td>
+        </tr>
       );
     });
     return (
@@ -82,7 +121,16 @@ class Menu extends React.Component {
             </Col>
 
             <Col md={6} sm={12} className='sandwiches'>
-              <ol class='rounded-list'>{liSandwich}</ol>
+              <Table striped bordered hover>
+                <thead>
+                  <tr>
+                    <th>Sandwich</th>
+                    <th>Indhold</th>
+                    <th>Pris</th>
+                  </tr>
+                </thead>
+                <tbody>{liSandwich}</tbody>
+              </Table>
             </Col>
           </Row>
         </Container>
