@@ -29,7 +29,7 @@ class Menu extends React.Component {
         indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
       },
       {
-        navn: 'Tunsalat',
+        navn: 'Falafel',
         indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
       },
       {
@@ -42,7 +42,7 @@ class Menu extends React.Component {
           'Salat, tomat, løg, rucola, krydderurter, syltede agurker og rødkål',
       },
       {
-        navn: 'Salami',
+        navn: 'Tunsalat',
         indhold:
           'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt og hjemmelavet pesto',
       },
@@ -51,7 +51,7 @@ class Menu extends React.Component {
         indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
       },
       {
-        navn: 'Humus',
+        navn: 'Salami',
         indhold:
           'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt, revet gulerod, feta og hjemmelavet pesto',
       },
@@ -59,16 +59,47 @@ class Menu extends React.Component {
     let liSandwich = sandwiches.map((item, index) => {
       return (
         <tr key={index}>
-          <td>{item.navn}</td>
-          <td>{item.indhold}</td>
-          <td>50 kr.</td>
+          <td style={{ fontWeight: '500' }}>{item.navn}</td>
+          <td style={{ width: '450px' }}>
+            <i>{item.indhold}</i>
+          </td>
+          <td style={{ minWidth: '50px' }}>50 kr.</td>
         </tr>
       );
     });
     return (
       <div id='menu'>
-        <div className='background-menu' id='menu-background-image'></div>
         <Container id='menu-container'>
+          <Row className='align-items-center text-center menu-row'>
+            <Col md={6} sm={12} className='menu-image-col'>
+              <img
+                className='menu-image'
+                alt='billede af salat'
+                src={sandwich}
+              ></img>
+            </Col>
+            <Col md={6} sm={12}>
+              <h3>Salatbaren</h3>
+              <p className='menu-text'>
+                Prisen for en salat er <strong>10.95 kr per 100 gram </strong>{' '}
+                <br />
+                Det er nemt, sundt og hurtigt at blande sin egen salat. Det er
+                op til dig selv at sammensætte din helt egen lækre salat. <br />{' '}
+                <br />
+                Du kan enten spise den her hos os eller tage den med på farten.
+                I vores salatbuffet finder du et stort udvalg af årstiden
+                grøntsager/salater og hjemmelavet delikatesser såsom humus,
+                tzatziki, oliven, fetadip mm.
+              </p>
+            </Col>
+            <Col md={6} sm={12} className='menu-img-mobile'>
+              <img
+                className='gulerødsalat'
+                alt='billede af salat'
+                src={sandwich}
+              ></img>
+            </Col>
+          </Row>
           <Row className='align-items-center text-center menu-row'>
             <Col md={6} sm={12} className='menu-image-col'>
               <img
@@ -101,27 +132,8 @@ class Menu extends React.Component {
           </Row>
 
           <Row className='align-items-center text-center menu-row'>
-            <Col md={6} sm={12}>
-              <h3>Om vores sandwich</h3>
-              <p className='menu-text'>
-                Prisen for en sandwich er <strong>48 kr</strong> og ekstra fyld
-                koster 8 kr per fyld.
-                <br />
-                Alle vores sandwich indeholder:{' '}
-                <i>
-                  salat, tomat, agurk, peberfrugt, rucola, krydderurter og
-                  rødløg. Men du kan naturligvis fravælge ingredienser.
-                </i>{' '}
-                <br /> <br />
-                Store bestillinger modtages gerne. Hvis I mangler sandwich eller
-                salatbuffet til et stort arrangement, står vi gerne til
-                rådighed. <br /> <br />
-                <strong>Ring og bestil på tlf 75 61 04 04.</strong>
-              </p>
-            </Col>
-
-            <Col md={6} sm={12} className='sandwiches'>
-              <Table striped bordered hover>
+            <Col md={12} sm={12} className='sandwiches'>
+              <Table striped bordered hover responsive='md'>
                 <thead>
                   <tr>
                     <th>Sandwich</th>

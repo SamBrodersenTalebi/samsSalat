@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row, Container, Button } from 'react-bootstrap';
+import { Col, Row, Button } from 'react-bootstrap';
 import { MdRestaurantMenu } from 'react-icons/md';
 import { GiTomato } from 'react-icons/gi';
 import { GiSandwich } from 'react-icons/gi';
