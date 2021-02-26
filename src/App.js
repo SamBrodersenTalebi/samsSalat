@@ -18,8 +18,8 @@ import swal from 'sweetalert';
 class App extends React.Component {
   componentDidMount() {
     swal({
-      title: 'Husk Mundbind i Sams Salat!',
-      text: 'Påbud fra sundhedsmyndighederne.',
+      title: 'Sams Salat åbner igen 1. Marts 2021',
+      text: 'Husk mundbind når du besøger os.',
       icon: 'warning',
       button: 'OK',
       dangerMode: true,
