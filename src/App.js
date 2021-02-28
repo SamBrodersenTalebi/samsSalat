@@ -9,9 +9,9 @@ Switch: as soon as one URL matches it stops searching through the routes
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
-import AboutUs from './components/AboutUs';
-import Menu from './components/Menu';
-import Home from './components/Home';
+import AboutUs from './components/AboutPage/AboutUs';
+import Menu from './components/MenuPage/Menu';
+import Home from './components/FrontPage/Home';
 import Footer from './components/Footer';
 import swal from 'sweetalert';
 
@@ -19,10 +19,10 @@ class App extends React.Component {
   componentDidMount() {
     swal({
       title: 'Sams Salat åbner igen 1. Marts 2021',
-      text: 'Husk mundbind når du besøger os.',
-      icon: 'warning',
+      text: 'Husk mundbind, når du besøger os.',
+      icon: 'success',
       button: 'OK',
-      dangerMode: true,
+      //dangerMode: true,
     });
   }
   render() {

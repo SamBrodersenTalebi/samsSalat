@@ -4,6 +4,17 @@
   padding-top: 10px;
 }
 
+.swal-button {
+  background-color: #afc8a0;
+}
+
+.swal-footer {
+  background-color: rgb(245, 248, 250);
+  margin-top: 32px;
+  border-top: 1px solid #e9eef1;
+  overflow: hidden;
+}
+
 /*Navigation*/
 #nav-color {
   background-color: #afc8a0 !important;
@@ -18,7 +29,7 @@
 }
 
 .nav-link:hover {
-  color: #edf4ae !important;
+  color: #576d6b !important;
 }
 
 .logo-image {
@@ -55,7 +66,7 @@
 
 /*textSection*/
 #textSection {
-  margin-top: 40px !important;
+  margin-top: 20px;
 }
 
 .textSection {
@@ -92,7 +103,7 @@
   .textSection-image1 {
     display: block !important;
     height: 350px;
-    background-image: url('./images/TjekMenu.jpg');
+    background-image: url('./images/pasta.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -103,7 +114,7 @@
   .textSection-image2 {
     display: block !important;
     height: 350px;
-    background-image: url('./images/ægOgRejer.jpg');
+    background-image: url('./images/salatshirazi.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -153,7 +164,7 @@
 .about-image-salad {
   width: 432.5px;
   height: 270px;
-  background-image: url('./images/hygiejne.jpg');
+  background-image: url('./images/sandwichråvarer.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -161,12 +172,12 @@
 }
 
 .samsArtikel {
-  color: #bad127;
+  color: #102f2c;
   font-weight: bold;
 }
 
 .samsArtikel:hover {
-  color: #3f6e66;
+  color: #576d6b;
 }
 
 @media screen and (max-width: 1200px) {
@@ -198,7 +209,7 @@
 /*Image carousel*/
 .carouselbox {
   margin: auto;
-  background-color: #edf4ae;
+  background-color: #afc8a0;
   width: 400px;
   height: 100px;
   color: #444444;
@@ -246,21 +257,12 @@
 
 /*Menu*/
 
-#menu-background-image {
-  height: 500px;
-  width: 100%;
-  background-image: url('./images/bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .menu-img-mobile {
   display: none;
 }
 
 #menu-container {
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 .menu-text {
@@ -362,7 +364,7 @@ ol {
 }
 
 .main-footer {
-  background-color: rgb(68, 68, 68);
+  background-color: #afc8a0;
 }
 
 .text-xs-center {
@@ -370,14 +372,14 @@ ol {
 }
 
 .footer-header {
-  color: rgb(236, 236, 236);
+  color: black;
   padding-top: 15px;
 }
 
 .list-unstyled li {
-  color: #bebebe;
+  color: #102f2c;
 }
 
 .text-xs-center {
-  color: #bebebe;
+  color: #102f2c;
 }
