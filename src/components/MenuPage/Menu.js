@@ -29,8 +29,9 @@ class Menu extends React.Component {
         indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
       },
       {
-        navn: 'Falafel',
-        indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
+        navn: 'Humus',
+        indhold:
+          'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt, gulerødder og hjemmelavet pesto',
       },
       {
         navn: 'Skinke Ost',

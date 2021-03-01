@@ -20,6 +20,8 @@ class AboutText extends React.Component {
             <a
               href='https://www.findsmiley.dk/540007'
               className='anchor-smiley'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <div className='about-image-smiley'></div>
             </a>
@@ -36,6 +38,8 @@ class AboutText extends React.Component {
               <a
                 className='samsArtikel'
                 href='https://www.findsmiley.dk/540007'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 her
               </a>
@@ -50,6 +54,8 @@ class AboutText extends React.Component {
             <a
               href='https://www.findsmiley.dk/540007'
               className='anchor-smiley'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <div className='about-image-smiley-mobile'></div>
             </a>
