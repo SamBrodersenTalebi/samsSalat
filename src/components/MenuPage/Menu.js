@@ -1,70 +1,117 @@
 import React from 'react';
 import sandwich from '../images/sandwichråvarer2.jpeg';
-
-import { Col, Row, Container, Table } from 'react-bootstrap';
+import kb from '../images/sandwiches web/kb.png';
+import spicy from '../images/sandwiches web/spicyk.png';
+import kh from '../images/sandwiches web/kh.png';
+import laks from '../images/sandwiches web/laks.png';
+import egg from '../images/sandwiches web/eggshrimp.png';
+import humus from '../images/sandwiches web/humus.png';
+import skinke from '../images/sandwiches web/skinkeost.png';
+import frikadelle from '../images/sandwiches web/frikadelle.png';
+import tun from '../images/sandwiches web/tun.png';
+import falafel from '../images/sandwiches web/falafel.png';
+import salami from '../images/sandwiches web/salami.png';
+import { Col, Row, Container, Card } from 'react-bootstrap';
 
 class Menu extends React.Component {
   render() {
     let sandwiches = [
       {
         navn: 'Kylling Bacon',
+        image: kb,
         indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
       },
       {
         navn: 'Spicy Kylling',
+        image: spicy,
         indhold:
           'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt, hjemmelavet chilisovs og jalepenos',
       },
       {
         navn: 'Kylling Haydari',
+        image: kh,
         indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
       },
       {
         navn: 'Laks Feta',
+        image: laks,
         indhold:
           'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt og hjemmelavet pesto',
       },
       {
         navn: 'Æg rejer',
+        image: egg,
         indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
       },
       {
         navn: 'Humus',
+        image: humus,
         indhold:
           'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt, gulerødder og hjemmelavet pesto',
       },
       {
         navn: 'Skinke Ost',
+        image: skinke,
         indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
       },
       {
         navn: 'Frikadelle',
+        image: frikadelle,
         indhold:
           'Salat, tomat, løg, rucola, krydderurter, syltede agurker og rødkål',
       },
       {
         navn: 'Tunsalat',
+        image: tun,
         indhold:
           'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt og hjemmelavet pesto',
       },
       {
         navn: 'Falafel Haydari',
+        image: falafel,
         indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
       },
       {
         navn: 'Salami',
+        image: salami,
         indhold:
           'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt, revet gulerod, feta og hjemmelavet pesto',
       },
     ];
     let liSandwich = sandwiches.map((item, index) => {
+      const { navn, indhold, image } = item;
+      let size = 4;
+      if (index === 10 || index === 9) {
+        size = 6;
+      }
       return (
-        <tr key={index}>
-          <td style={{ fontWeight: '500' }}>{item.navn}</td>
-          <td style={{ width: '450px' }}>
-            <i>{item.indhold}</i>
-          </td>
-        </tr>
+        <Col md={size} sm={12} key={index}>
+          <Card
+            style={{
+              width: '350px',
+              height: '270px',
+              margin: 'auto',
+              marginBottom: '15px',
+              textAlign: 'center',
+            }}
+          >
+            <Card.Img
+              variant='top'
+              src={image}
+              style={{
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                width: '310px',
+                margin: 'auto',
+              }}
+            />
+            <Card.Body>
+              <Card.Title>{navn}</Card.Title>
+              <Card.Text>{indhold}</Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
       );
     });
     return (
@@ -103,19 +150,7 @@ class Menu extends React.Component {
             </Col>
           </Row>
 
-          <Row className='align-items-center text-center menu-row'>
-            <Col md={12} sm={12} className='sandwiches'>
-              <Table striped bordered hover responsive='md'>
-                <thead>
-                  <tr>
-                    <th>Sandwich</th>
-                    <th>Indhold</th>
-                  </tr>
-                </thead>
-                <tbody>{liSandwich}</tbody>
-              </Table>
-            </Col>
-          </Row>
+          <Row>{liSandwich}</Row>
         </Container>
       </div>
     );
