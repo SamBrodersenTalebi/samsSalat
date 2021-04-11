@@ -47,7 +47,7 @@ class Menu extends React.Component {
         navn: 'Humus',
         image: humus,
         indhold:
-          'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt, gulerødder og hjemmelavet pesto',
+          'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt, gulerødder, feta og hjemmelavet pesto',
       },
       {
         navn: 'Skinke Ost',
