@@ -16,7 +16,7 @@ import Footer from './components/Footer';
 import swal from 'sweetalert';
 
 class App extends React.Component {
-  componentDidMount() {
+  /*componentDidMount() {
     swal({
       title: 'Sams Salat har nu åben igen',
       text: 'Husk mundbind, når du besøger os.',
@@ -25,6 +25,7 @@ class App extends React.Component {
       //dangerMode: true,
     });
   }
+  */
   render() {
     return (
       <Router>
