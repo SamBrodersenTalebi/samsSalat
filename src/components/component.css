@@ -328,6 +328,14 @@ ol {
   transition: all 0.3s ease-out;
 }
 
+.card-sandwich {
+  width: 350px;
+  height: 270px;
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 @media screen and (max-width: 992px) {
   .menu-image {
     height: 250px;
@@ -354,6 +362,12 @@ ol {
   .rounded-list {
     width: 90%;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .card-sandwich {
+    width: 315px;
   }
 }
 

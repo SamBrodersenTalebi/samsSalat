@@ -13,7 +13,7 @@ import AboutUs from './components/AboutPage/AboutUs';
 import Menu from './components/MenuPage/Menu';
 import Home from './components/FrontPage/Home';
 import Footer from './components/Footer';
-import swal from 'sweetalert';
+//import swal from 'sweetalert';
 
 class App extends React.Component {
   /*componentDidMount() {

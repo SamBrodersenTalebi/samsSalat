@@ -86,15 +86,7 @@ class Menu extends React.Component {
       }
       return (
         <Col md={size} sm={12} key={index}>
-          <Card
-            style={{
-              width: '350px',
-              height: '270px',
-              margin: 'auto',
-              marginBottom: '15px',
-              textAlign: 'center',
-            }}
-          >
+          <Card className='card-sandwich'>
             <Card.Img
               variant='top'
               src={image}
