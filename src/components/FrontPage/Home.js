@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageCarousel from './ImageCarousel';
 import TextSection from './textSection';
-import { Container } from 'react-bootstrap';
+import { Container, Col, Row, ListGroup } from 'react-bootstrap';
 import '../component.css';
 
 class Home extends React.Component {
@@ -61,7 +61,56 @@ class Home extends React.Component {
       <div id='home-page'>
         <ImageCarousel />
         <div id='textSection'>
-          <Container>{textSection}</Container>
+          <Container>
+            <Row className='align-center align-items-center box'>
+              <Col
+                md={12}
+                style={{
+                  maxWidth: '700px',
+
+                  margin: 'auto',
+                }}
+              >
+                <h3>Job i Sams Salat</h3>
+                <p>
+                  Vi søger medarbejdere til at hjælpe med kundebetjening,
+                  tilberedning af sandwich og salater, og til at hjælpe i
+                  køkkenet (snitte salat, rengøring og opvask m.m.).
+                </p>
+                <h5>Om dig</h5>
+                <ListGroup variant='flush'>
+                  <ListGroup.Item>
+                    Du er god til at have overblik
+                  </ListGroup.Item>
+                  <ListGroup.Item>Er arbejdsom</ListGroup.Item>
+                  <ListGroup.Item>Positiv og smilende</ListGroup.Item>
+                  <ListGroup.Item>Kan arbejde under pres</ListGroup.Item>
+                </ListGroup>
+                <h5 style={{ marginTop: '16px' }}>
+                  Vi søger to forskellige medarbejdere:
+                </h5>
+                <ListGroup variant='flush'>
+                  <ListGroup.Item>
+                    En der kan hjælpe til ved middagstid, ca. 20-25 timer om
+                    ugen.
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    {' '}
+                    En der kan hjælpe ved lukketid om eftermiddagen, ca. 10-15
+                    timer om ugen.
+                  </ListGroup.Item>
+                </ListGroup>
+
+                <p>
+                  Send os CV/ansøgning på:
+                  <strong>
+                    <i> samssalat@gmail.com</i>
+                  </strong>
+                </p>
+              </Col>
+            </Row>
+            {textSection}
+          </Container>
         </div>
       </div>
     );
