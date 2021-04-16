@@ -58,13 +58,12 @@ class Menu extends React.Component {
         navn: 'Frikadelle',
         image: frikadelle,
         indhold:
-          'Salat, tomat, løg, rucola, krydderurter, syltede agurker og rødkål',
+          'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt syltede agurker og rødkål',
       },
       {
         navn: 'Tunsalat',
         image: tun,
-        indhold:
-          'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt og hjemmelavet pesto',
+        indhold: 'Salat, tomat, agurk, løg, rucola, krydderurter og peberfrugt',
       },
       {
         navn: 'Falafel Haydari',
@@ -75,7 +74,7 @@ class Menu extends React.Component {
         navn: 'Salami',
         image: salami,
         indhold:
-          'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt, revet gulerod, feta og hjemmelavet pesto',
+          'Salat, tomat, agurk, løg, rucola, krydderurter, peberfrugt og hjemmelavet pesto',
       },
     ];
     let liSandwich = sandwiches.map((item, index) => {
