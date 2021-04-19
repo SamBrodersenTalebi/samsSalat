@@ -91,13 +91,11 @@ class Home extends React.Component {
                 </h5>
                 <ListGroup variant='flush'>
                   <ListGroup.Item>
-                    En der kan hjælpe til ved middagstid, ca. 20-25 timer om
-                    ugen.
+                    En der kan hjælpe til ved middagstid.
                   </ListGroup.Item>
                   <ListGroup.Item>
                     {' '}
-                    En der kan hjælpe ved lukketid om eftermiddagen, ca. 10-15
-                    timer om ugen.
+                    En der kan hjælpe ved lukketid om eftermiddagen.
                   </ListGroup.Item>
                 </ListGroup>
 
