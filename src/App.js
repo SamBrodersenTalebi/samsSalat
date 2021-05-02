@@ -13,10 +13,10 @@ import AboutUs from './components/AboutPage/AboutUs';
 import Menu from './components/MenuPage/Menu';
 import Home from './components/FrontPage/Home';
 import Footer from './components/Footer';
-import swal from 'sweetalert';
+//import swal from 'sweetalert';
 
 class App extends React.Component {
-  componentDidMount() {
+  /*componentDidMount() {
     swal({
       title: 'Sams Salat holder lukket den 1. maj',
       text: 'Vi ønsker jer en god weekend',
@@ -25,6 +25,7 @@ class App extends React.Component {
       //dangerMode: true,
     });
   }
+  */
   
   render() {
     return (
