@@ -25,10 +25,10 @@ class Footer extends React.Component {
               <h5 class='footer-header'>Åbningstider</h5>
               <ul className='list-unstyled'>
                 <li>
-                  <span>Mandag-Fredag:</span> 10:30 - 18:00
+                  <span>Mandag-Fredag:</span> 10:30 - 17:00
                 </li>
                 <li>
-                  <span>Lørdag:</span> 11:00 - 15:00
+                  <span>Lørdag:</span> Lukket
                 </li>
                 <li>
                   <span>Søndag:</span> Lukket
