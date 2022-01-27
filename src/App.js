@@ -18,8 +18,8 @@ import swal from 'sweetalert';
 class App extends React.Component {
   componentDidMount() {
     swal({
-      title: "Sams Salat holder lukket grundet corona situationen",
-      text: "Hjemmesiden vil blive opdateret mht åbnings tidspunkt",
+      title: "Sams Salat åbner igen tirsdag den 1. februar 2022",
+      text: "Vi glæder os til at se jer igen",
       icon: 'info',
       button: 'OK',
       //dangerMode: true,
