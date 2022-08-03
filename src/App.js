@@ -25,8 +25,7 @@ class App extends React.Component {
       //dangerMode: true,
     });
   }*/
-  
-  
+
   render() {
     return (
       <Router>
