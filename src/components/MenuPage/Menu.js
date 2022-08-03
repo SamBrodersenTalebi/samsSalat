@@ -1,5 +1,7 @@
 import React from 'react';
 import sandwich from '../images/sandwichråvarer2.jpeg';
+import kaffe from '../images/kaffe.jpg';
+// import kaffepriser from '../images/kaffepriser.jpg';
 import kb from '../images/sandwiches web/kb.png';
 import spicy from '../images/sandwiches web/spicyk.png';
 import kh from '../images/sandwiches web/kh.png';
@@ -119,9 +121,9 @@ class Menu extends React.Component {
             <Col md={6} sm={12}>
               <h3>Salat og Sandwich</h3>
               <p className='menu-text'>
-                Prisen for en salat er <strong>12.95 kr per 100 gram </strong>{' '}
+                Prisen for en salat er <strong>13.95 kr per 100 gram </strong>{' '}
                 <br />
-                Prisen for en sandwich er fra <strong>58 kr</strong> <br />
+                Prisen for en sandwich er fra <strong>62 kreg</strong> <br />
                 <br />
                 Det er nemt, sundt og hurtigt at blande sin egen salat. Det er
                 op til dig selv at sammensætte din helt egen lækre salat. <br />{' '}
@@ -140,7 +142,28 @@ class Menu extends React.Component {
               ></img>
             </Col>
           </Row>
+          <Row>
+            <Col md={6} sm={12}>
 
+              <div className="kaffe-div-container kaffe-text">
+                <h3>Kaffe</h3>
+                <p className='menu-text'>
+                  Nyd din friskmalet kaffe ved Sams Salat eller tag den med dig på farten. <br /> <br />
+                  Vælg mellem 5 varianter – americano, kakao, cafe latté, cappuccino eller espresso.
+                </p>
+              </div>
+            </Col>
+            <Col md={6} sm={12}>
+              <div className="kaffe-div-container kaffe-img">
+                <img
+                  className='menu-image img-kaffe'
+                  alt='billede af salat'
+                  src={kaffe}
+                ></img>
+              </div>
+
+            </Col>
+          </Row>
           <Row>{liSandwich}</Row>
         </Container>
       </div>
