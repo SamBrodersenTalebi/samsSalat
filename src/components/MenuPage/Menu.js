@@ -123,8 +123,8 @@ class Menu extends React.Component {
               <p className='menu-text'>
                 Prisen for en salat er <strong>13.95 kr per 100 gram </strong>{' '}
                 <br />
-                
-                Prisen for en sandwich er fra <strong>62 kreg</strong> <br />
+
+                Prisen for en sandwich er fra <strong>62 kr</strong> <br />
 
                 <br />
                 Det er nemt, sundt og hurtigt at blande sin egen salat. Det er
