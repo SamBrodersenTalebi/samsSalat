@@ -19,7 +19,7 @@ class App extends React.Component {
   componentDidMount() {
     swal({
       title: "Vi holder vinterferie.",
-      text: "Sams Salat åbnet igen onsdag 1. marts 2023. På gensyn.",
+      text: "Sams Salat åbner igen onsdag 1. marts 2023. På gensyn.",
       icon: 'info',
       button: 'OK',
       //dangerMode: true,
