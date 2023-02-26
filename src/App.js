@@ -18,7 +18,7 @@ import swal from 'sweetalert';
 class App extends React.Component {
   componentDidMount() {
     swal({
-      title: "Vi holder vinterferie.",
+      title: "Vi åbner igen.",
       text: "Sams Salat åbner igen onsdag 1. marts 2023. På gensyn.",
       icon: 'info',
       button: 'OK',
