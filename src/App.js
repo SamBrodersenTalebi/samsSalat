@@ -16,7 +16,7 @@ import Footer from './components/Footer';
 import swal from 'sweetalert';
 
 class App extends React.Component {
-  componentDidMount() {
+  /*componentDidMount() {
     swal({
       title: "Vi åbner igen.",
       text: "Sams Salat åbner igen onsdag 1. marts 2023. På gensyn.",
@@ -24,7 +24,7 @@ class App extends React.Component {
       button: 'OK',
       //dangerMode: true,
     });
-  }
+  }*/
 
   render() {
     return (
