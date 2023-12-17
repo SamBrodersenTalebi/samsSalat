@@ -37,32 +37,46 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Building and Pushing Docker Images
+
+Before pushing Docker images, ensure that you have Docker installed and that you are logged in to Docker Hub.
+
+### Building the Image for arm64
+
+To build a Docker image for `arm64` architecture, navigate to the directory with your Dockerfile and run:
+
+```bash
+docker buildx create --name mybuilder --use
+docker buildx inspect --bootstrap
+docker buildx build --platform linux/arm64 -t sambrodersen1998/samssalat-img:arm64-latest --load .
+```
+
+### Building the Image for amd64
+
+To build a Docker image for `amd64` architecture, navigate to the directory with your Dockerfile and run:
+
+```bash
+docker buildx build --platform linux/amd64 -t sambrodersen1998/samssalat-img:amd64-latest --load .
+```
+
+### Pushing the Image to Docker Hub
+
+After building your image, push it to Docker Hub:
+
+```bash
+docker login --username sambrodersen1998
+docker push sambrodersen1998/samssalat-img:arm64-latest
+docker push sambrodersen1998/samssalat-img:amd64-latest
+```
+
+Ensure to replace `sambrodersen1998/samssalat-img:arm64-latest` and `sambrodersen1998/samssalat-img:amd64-latest` with your image name and tag accordingly.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+...
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[Continue with the rest of your original README content]
