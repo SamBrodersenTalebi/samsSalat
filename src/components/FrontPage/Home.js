@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageCarousel from './ImageCarousel';
 import TextSection from './textSection';
-import { Container, Col, Row, ListGroup } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import '../component.css';
 
 class Home extends React.Component {
