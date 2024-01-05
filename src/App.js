@@ -16,15 +16,15 @@ import Footer from './components/Footer';
 import swal from 'sweetalert';
 
 class App extends React.Component {
-  componentDidMount() {
-    swal({
-      title: "Lukket",
-      text: "Sams Salat holder lukket den 4. januar pga. snevejr.",
-      icon: 'info',
-      button: 'OK',
-      dangerMode: true,
-    });
-  }
+  // componentDidMount() {
+  //   swal({
+  //     title: "Lukket",
+  //     text: "Sams Salat holder lukket den 4. januar pga. snevejr.",
+  //     icon: 'info',
+  //     button: 'OK',
+  //     dangerMode: true,
+  //   });
+  // }
 
   render() {
     return (
